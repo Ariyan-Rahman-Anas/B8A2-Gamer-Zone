@@ -1,0 +1,130 @@
+@media only screen and (max-width:576px){
+    nav, nav ul{
+        flex-direction: column;
+    }
+    .logo, nav ul li{
+        margin: .5rem 0;
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .cards-are{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    }
+
+
+
+    #Play-instantly{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img-1{
+    height: 16rem;
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-2{
+    height: 9rem;
+    width: 8rem;
+    position: absolute;
+    top: 9rem;
+    left: 1.5rem;
+
+}
+.play-banner{
+    position: relative;
+    height: 18.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+
+
+    .row1{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 0 !important;
+    }
+    .row2{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 0 !important;
+
+    }
+    .game{
+        margin: .5rem 0 !important;
+    }
+
+
+
+    footer .list1, .footer-social-icons{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer .list2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+
+
+
+
+
+@media only screen and (min-width:576px) and (max-width:992px){
+    .cards-are{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    }
+
+
+    #Play-instantly{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img-1{
+    height: 16rem;
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    right: 8rem;
+}
+.img-2{
+    height: 9rem;
+    width: 8rem;
+    position: absolute;
+    top: 9rem;
+    left: 11rem;
+
+}
+.play-banner{
+    position: relative;
+    height: 18.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+
+
+
+    .row1{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem 0 !important;
+    }
+    .row2{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 0 !important;
+
+    }
+    .game{
+        margin: .5rem 0 !important;
+    }
+}

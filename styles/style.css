@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* <!-- ========================--- header section ---======================= --> */
+header{
+    padding: 1.2rem 0;
+    background-color: #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+span{
+    color: #FF42A5;
+}
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding: 1rem 1.5rem;
+}
+nav ul li:last-child a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .6rem 2.9rem.6rem .8rem;
+    background-color: rgb(224, 224, 224);
+    border-radius: .3rem;
+}
+nav ul li:last-child a .btn-icons{
+    display: flex;
+    width: 1.2rem;
+}
+nav ul li:last-child a .btn-icons img{
+    width: 100%;
+    margin: 0 .3rem;
+}
+
+/* <!-- ========================--- banner section ---======================= --> */
+#Home{
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;   
+}
+.home-content{
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    place-items: center;
+    gap: 1rem;
+}
+.home-info{
+    
+    padding: 5rem 2rem;
+    width: 100%;
+}
+.home-banner{
+    width: 92%;
+}
+.title{
+    font-size: 5vw;
+}
+.sub-title{
+    font-size: 3vw;
+}
+.gradient-text{
+    background: linear-gradient(to bottom, rgb(255, 120, 255), rgb(176, 19, 255));
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.items-are{
+    margin: 0 auto;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    padding: .5rem 0;
+}
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border: 0;
+    font-weight: 550;
+    border-radius: .3rem;
+    margin: 1rem 0;
+}
+.btn1{
+    background-color: pink;
+    background-color: #ff2d99;
+}
+.btn2{
+    background-color: #4EC5F7;
+
+}
+.item-icon{
+    width: 1.6rem;
+}
+.home-banner img{
+    width: 100%;
+
+}
+
+/* <!-- ========================--- online games section ---======================= --> */
+#Online-games{
+    width: 80%;
+    margin: 5rem auto;
+}
+#Online-games h2, .details-p{
+    text-align: center;
+}
+.cards-are{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.card{
+    height: 100%;
+    position: relative;
+    transition: ease-in-out all .8s;
+}
+.card p{
+    text-align: left !important;
+}
+.card-img{
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.card-img img{
+    height: 10%;
+    width: 100%;
+    transition: all .5s;
+
+}
+.card-img:hover .hover-text{
+    visibility: visible;
+    opacity: 1;
+}
+.card-img:hover img{
+    transform: scale(1.1,1.1);
+}
+.details{
+    color: gray;
+    margin: .5rem 0 1rem 0;
+}
+.hover-text{
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+    top: 0;
+    left: auto;
+    margin: 0 auto;
+    height: 81.5%;
+    width: 100%;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem 0;
+    visibility: hidden;
+}
+.card-details{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.hover-text .watch-now{
+    color: #ff2d99;
+}
+.img{
+    border: 3px solid #ff2d99;
+    border-radius: 1rem;
+}
+
+/* <!-- ========================--- play instant section ---======================= --> */
+#Play-instantly{
+    width: 80%;
+    margin:  0  auto;
+    display: grid;
+    grid-template-columns: repeat(2, 40% 60%);
+}
+.play-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-1{
+    height: 30rem;
+    width: 29rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-2{
+    height: 16rem;
+    width: 15rem;
+    position: absolute;
+    top: 17.5rem;
+    left: 1.5rem;
+
+}
+.play-banner{
+    position: relative;
+    height: 34rem;
+    width: 100%;
+}
+
+/* <!-- ========================--- our all games category section ---======================= --> */
+#Our-all-games{
+    width: 100%;
+    margin: 0 auto;
+}
+.games-are{
+    padding: 3rem;
+}
+.games-are .game:hover{
+    border: 2px solid #ff2d99;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(5, 10.5rem 12rem 10.8rem 12.5rem 10.5rem);
+    margin:2rem 9.3rem !important;
+}
+.row2{
+    display: grid;
+    grid-template-columns: repeat(4, 12.8rem 11.5rem 10.5rem 14.5rem);
+    margin:2rem 12.7rem !important;
+}
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: .1rem;
+    border-radius: 2rem;
+    width: 13rem;
+}
+.game1{
+    width: 8.8rem;
+}
+.game2{
+    width: 10.3rem;
+}
+.game3{
+    width: 9rem;
+}
+.game4{
+    width: 11rem;
+}
+.game5{
+    width: 8.3rem;
+}
+.game6{
+    width: 11.1rem;
+}
+.game7{
+    width: 9.6rem;
+
+}
+.game8{
+    width: 8.8rem;
+}
+.game9{
+    width: 9.6rem;
+    width: 12.8rem;
+
+}
+.game img, h5{
+    margin: 0 .1rem;
+}
+.game img{
+    width: 2.2rem;
+}
+
+/* <!-- ========================--- footer section ---======================= --> */
+footer{
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5rem 0 1rem 0;
+    background-color: black;
+    border: 2px solid white;
+}
+footer .logo, ul, .footer-social-icons{
+    margin: 2rem;
+}
+.footer-content{
+    width: 60%;
+    margin: 0 auto;
+}
+footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 auto;
+}
+.footer-social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.65rem;
+}
+footer .list1, footer .list2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer p{
+    color: rgb(183, 183, 183);
+}
