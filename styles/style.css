@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* <!-- ========================--- header section ---======================= --> */
 header{
-    padding: 1.2rem 0;
     background-color: #fff;
 }
 .logo{
@@ -56,34 +58,43 @@ nav ul li:last-child a .btn-icons img{
 }
 
 /* <!-- ========================--- banner section ---======================= --> */
-#Home{
-    background-image: url(../images/Group\ 14.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;   
-}
 .home-content{
-    margin: 0 auto;
-    padding: 0 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-self: center;
-    place-items: center;
+    margin: 0 0 8rem 0;
+    background-color: #FCF6FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     gap: 1rem;
 }
 .home-info{
-    
-    padding: 5rem 2rem;
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left; 
     width: 100%;
 }
+.home-info-text{
+    padding: 3rem 6rem;
+}
 .home-banner{
-    width: 92%;
+    padding:0 6rem;
+}
+.home-banner-img{
+    width: 100%;
+}
+.home-banner-img img{
+    width: 100%;
 }
 .title{
     font-size: 5vw;
 }
 .sub-title{
     font-size: 3vw;
+}
+
+.details{
+    color: gray !important;
+    margin: .5rem 0 1rem 0;
 }
 .gradient-text{
     background: linear-gradient(to bottom, rgb(255, 120, 255), rgb(176, 19, 255));
@@ -104,15 +115,14 @@ nav ul li:last-child a .btn-icons img{
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 2rem;
 }
 .btn{
     color: white;
-    text-decoration: none;
     padding: .8rem 1.5rem;
     border: 0;
     font-weight: 550;
     border-radius: .3rem;
-    margin: 1rem 0;
 }
 .btn1{
     background-color: pink;
@@ -120,15 +130,31 @@ nav ul li:last-child a .btn-icons img{
 }
 .btn2{
     background-color: #4EC5F7;
-
 }
 .item-icon{
     width: 1.6rem;
 }
 .home-banner img{
     width: 100%;
-
 }
+
+/* <!-- ========================--- we are gamer section ---======================= --> */
+#We-r-gamer{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gamer-img img{
+    width: 100%;
+}
+.gamer-info{
+    text-align: right;
+}
+.second-p-of-gamer{
+    margin: 1rem 0 0 0 !important;
+}
+
 
 /* <!-- ========================--- online games section ---======================= --> */
 #Online-games{
@@ -167,10 +193,6 @@ nav ul li:last-child a .btn-icons img{
 }
 .card-img:hover img{
     transform: scale(1.1,1.1);
-}
-.details{
-    color: gray;
-    margin: .5rem 0 1rem 0;
 }
 .hover-text{
     font-size: 1.4rem;
@@ -238,71 +260,42 @@ nav ul li:last-child a .btn-icons img{
 }
 
 /* <!-- ========================--- our all games category section ---======================= --> */
-#Our-all-games{
-    width: 100%;
+#Game-category{
+    width: 80%;
     margin: 0 auto;
 }
 .games-are{
-    padding: 3rem;
-}
-.games-are .game:hover{
-    border: 2px solid #ff2d99;
-}
-.row1{
-    display: grid;
-    grid-template-columns: repeat(5, 10.5rem 12rem 10.8rem 12.5rem 10.5rem);
-    margin:2rem 9.3rem !important;
-}
-.row2{
-    display: grid;
-    grid-template-columns: repeat(4, 12.8rem 11.5rem 10.5rem 14.5rem);
-    margin:2rem 12.7rem !important;
+    position: relative;
+    margin: 5rem 0;
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 3rem;
 }
 .game{
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding: .1rem;
+    justify-content: center;
+    padding: .18rem .1rem;
+    transition: transform 0.3s ease;
     border-radius: 2rem;
-    width: 13rem;
+    transition: ease-in-out .35s;
 }
-.game1{
-    width: 8.8rem;
-}
-.game2{
-    width: 10.3rem;
-}
-.game3{
-    width: 9rem;
-}
-.game4{
-    width: 11rem;
-}
-.game5{
-    width: 8.3rem;
-}
-.game6{
-    width: 11.1rem;
-}
-.game7{
-    width: 9.6rem;
-
-}
-.game8{
-    width: 8.8rem;
-}
-.game9{
-    width: 9.6rem;
-    width: 12.8rem;
-
-}
-.game img, h5{
-    margin: 0 .1rem;
+.game:hover{
+    border: 2px solid rgb(255, 58, 91);
+    transform: scale(1.1, 1.1);
+    position: relative;
+    z-index: 1;
 }
 .game img{
-    width: 2.2rem;
+    width: 2.3rem;
+    margin: 0 .1rem 0 .15rem;
 }
-
+.game h6{
+    margin: 0 .15rem 0 .1rem;
+}
 /* <!-- ========================--- footer section ---======================= --> */
 footer{
     color: white;
@@ -310,7 +303,6 @@ footer{
     font-size: .8rem;
     padding: 5rem 0 1rem 0;
     background-color: black;
-    border: 2px solid white;
 }
 footer .logo, ul, .footer-social-icons{
     margin: 2rem;
@@ -331,6 +323,10 @@ footer .logo{
     justify-content: center;
     gap: 1.5rem;
     font-size: 1.65rem;
+}
+.footer-social-icons a{
+    color: white;
+    text-decoration: none;
 }
 footer .list1, footer .list2{
     display: flex;
